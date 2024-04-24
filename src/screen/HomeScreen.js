@@ -10,7 +10,6 @@ import Footer from '../component/homeComponent/Footer'
 const HomeScreen = () => {
   return (
     <div>
-
       <NavBar />
       <HeroSection />
       <About />

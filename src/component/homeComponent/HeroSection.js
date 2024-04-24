@@ -3,20 +3,20 @@ import heropic from "../../assets/hero.png";
 
 const HeroSection = () => {
   return (
-    <div className="w-[84%]  mx-auto md:flex justify-between  caret-transparent">
+    <div className="w-[84%]  mx-auto md:flex justify-between  caret-transparent" id="hero">
       <div className="md:w-[47.5%] md:py-10">
         <span className="font-Poppins text-[17px] text-[#4159A7] font-[500] border-b-[3px] border-[#4159A7] ">
-          Future With ProDigi
+          Future With Prodigia
         </span>
         <h1 className="xl:text-5xl lg:text-4xl md:text-4xl sm:text-3xl text-2xl  font-[600] font-poppins">
           The Future of Digital Innovation Unfolds
         </h1>
         <p className="font-poppins font-[300] sm:text-lg sm:w-[90%] text-[#000000] lg:leading-[37px] md:leading-[25px] ">
-          ProDigi solve the world's biggest problems with Expertise. ProDigi
+          Prodigia solve the world's biggest problems with expertise. Prodigia
           helps global brand with digital products on web, mobile and connected
           platforms.
         </p>
-        <button
+        <button style={{ borderRadius: '60px' , padding: '16px 26px' }}
           type="button"
           className="flex mt-6 items-center md:py-4 md:px-5 text-[#4159A7] font-Poppins border border-gray-800 rounded-[50px] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
@@ -38,7 +38,7 @@ const HeroSection = () => {
           </svg>
         </button>
       </div>
-      <div className="md:w-[39.5%] w-[50%] mx-auto">
+      <div  className="md:w-[39.5%] w-[50%] mx-auto">
         <img src={heropic}  />
       </div>
     </div>

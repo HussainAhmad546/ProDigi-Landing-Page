@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import person from "../../assets/person.png";
-
+import { Swiper, SwiperSlide } from 'swiper/react';
 const Slider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -19,9 +19,7 @@ const Slider = ({ slides }) => {
   };
 
   return (
-    <div
-      className="md:w-[47.13%] my-5 flex flex-col justify-center"
-    >
+    <div data-aos="fade-up" className="md:w-[47.13%] my-5 flex flex-col justify-center">
       <article className="bg-white p-5 rounded-md shadow-md">
         {/* Slider content */}
         <div className="flex items-center mb-4">
@@ -77,44 +75,13 @@ const Slider = ({ slides }) => {
               />
             </svg>
           </div>
-          <div>
-            <svg
-              width="73"
-              height="30"
-              viewBox="0 0 73 30"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_1_827)" onClick={handleNext}>
-                <path
-                  d="M57.4999 0C48.9395 0 42 6.71567 42 14.9999C42 23.2841 48.9395 30.0001 57.4999 30.0001C66.0603 30.0001 73.0001 23.2841 73.0001 14.9999C72.9904 6.71951 66.0566 0.00933834 57.4999 0ZM57.4999 28.4999C49.7955 28.4999 43.5499 22.4558 43.5499 14.9999C43.5499 7.54404 49.7955 1.49991 57.4999 1.49991C65.2043 1.49991 71.4499 7.54404 71.4499 14.9999C71.4411 22.4522 65.2006 28.4914 57.4999 28.4999Z"
-                  fill="#4159A7"
-                />
-                <path
-                  d="M55.6852 9.18538C55.3628 8.91264 54.8732 8.9445 54.5914 9.25624C54.3098 9.56825 54.3427 10.042 54.6649 10.3148L60.1981 14.9999L54.6646 19.6853C54.3422 19.958 54.3095 20.4318 54.5911 20.7435C54.8729 21.0556 55.3625 21.0874 55.6849 20.8147L61.8848 15.5646C62.0531 15.4223 62.1496 15.2163 62.1496 14.9999C62.1496 14.7835 62.0531 14.5777 61.8848 14.4352L55.6852 9.18538Z"
-                  fill="#4159A7"
-                />
-              </g>
-              <g clip-path="url(#clip1_1_827)" onClick={handleNext}>
-                <path
-                  d="M0 15.0001C0 23.2844 6.93969 29.9999 15.5001 29.9999C24.0605 29.9999 30.9999 23.2844 30.9999 15.0001C30.9999 6.71583 24.0605 0 15.5001 0C6.93969 0 0 6.71583 0 15.0001ZM13.6971 8.76304L20.2234 14.2895C20.4358 14.4684 20.558 14.7275 20.558 15.0001C20.558 15.2724 20.4358 15.5318 20.2234 15.7104L13.6971 21.2369C13.2917 21.5812 12.6742 21.5425 12.3184 21.1501C11.9626 20.7575 12.0026 20.1602 12.408 19.8159L18.0942 15.0001L12.408 10.1843C12.0026 9.8397 11.9626 9.24239 12.3184 8.85007C12.6742 8.45745 13.2917 8.41871 13.6971 8.76304Z"
-                  fill="#4159A7"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_1_827">
-                  <rect
-                    width="31"
-                    height="30"
-                    fill="white"
-                    transform="translate(42)"
-                  />
-                </clipPath>
-                <clipPath id="clip1_1_827">
-                  <rect width="31" height="30" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
+          <div className="flex">
+            <button onClick={handlePrev}  className=" mr-3 flex items-center justify-center w-8 h-8 bg-[#4159A7] rounded-full text-white text-xl focus:outline-none focus:ring-2 focus:ring-blue-600">
+              &lt;
+            </button>
+            <button onClick={handleNext} className="flex items-center justify-center w-8 h-8 bg-[#4159A7] rounded-full text-white text-xl focus:outline-none focus:ring-2 focus:ring-blue-600">
+              &gt;
+            </button>
           </div>
         </div>
       </article>
