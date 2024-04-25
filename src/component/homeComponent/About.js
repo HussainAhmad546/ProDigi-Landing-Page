@@ -11,7 +11,7 @@ const About = () => {
     {
       pic: pic1,
       title: "Projects",
-      range: "100+",
+      range: "110+",
       paragraph: "Prodigia ha delivered hundreds of successful projects around the world in various domains.",
     },
     {
